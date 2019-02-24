@@ -185,101 +185,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-top: 40px">
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-4" ng-repeat="goal in $goals">
+                            <div class="col-4" ng-repeat="goal in goalList">
                                 <div class="card card-chart">
+                                    <div class="card-header card-header-warning">
+                                        <h4>$  {{-goal.savings | number:0}}/per month</h4>
+                                    </div>
                                     <div class="card-body">
-                                        <h4 class="card-title">Bills</h4>
+                                        <h4 class="card-title">{{goal.goalName}}</h4>
                                     </div>
                                     <div class="card-footer">
                                         <div class="stats">
-                                            <i class="material-icons">access_time</i> campaign sent 2 days ago
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card card-chart">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Bills</h4>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">access_time</i> campaign sent 2 days ago
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card card-chart">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Bills</h4>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">access_time</i> campaign sent 2 days ago
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card card-chart">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Bills</h4>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">access_time</i> campaign sent 2 days ago
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card card-chart">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Bills</h4>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">access_time</i> campaign sent 2 days ago
+                                            <i class="material-icons">access_time</i> {{goal.goalYears}} years
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div id="lastchart"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="float-left">
-                    <ul>
-                        <li>
-                            <a href="https://www.creative-tim.com">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://creative-tim.com/presentation">
-                                About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://blog.creative-tim.com">
-                                Blog
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.creative-tim.com/license">
-                                Licenses
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
     </div>
 </div>

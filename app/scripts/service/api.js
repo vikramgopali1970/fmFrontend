@@ -64,6 +64,26 @@ class Events{
         });
     }
 
+    getGoals(){
+        return this.$http.post(`http://localhost:8000/getGoal`,{"userName":"vikram"}).then(success=>{
+            console.log(success.data);
+            return success.data.data;
+        }).catch(error=>{
+
+        });
+    }
+
+
+    finalChart(){
+        return this.$http.post(`http://localhost:8000/finalChart`,{"name":"vikram"}).then(success=>{
+            console.log(success.data);
+            return success.data.data;
+        }).catch(error=>{
+
+        });
+    }
+
+
     getBusinessDetails(bObj){
         console.log("zip requested is ",bObj);
         return this.$http.post("http://localhost:8000/verifyBusiness",bObj).then(success=>{
